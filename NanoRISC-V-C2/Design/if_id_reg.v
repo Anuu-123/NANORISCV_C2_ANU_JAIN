@@ -2,10 +2,10 @@
 `timescale 1ns / 1ps
 
 module if_id_reg (
-    input  wire        clk,
-    input  wire        rst,
-    input  wire        flush,          
-    input  wire        stall,        
+    input  wire clk,
+    input  wire rst,
+    input  wire flush,          
+    input  wire stall,        
     input  wire [31:0] if_pc,         
     input  wire [31:0] if_instruction, 
     output reg  [31:0] id_pc,          
