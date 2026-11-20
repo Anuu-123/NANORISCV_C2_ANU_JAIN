@@ -1,4 +1,3 @@
-
 `timescale 1ns / 1ps
 
 module instruction_memory #(
@@ -7,8 +6,6 @@ module instruction_memory #(
     input  wire [31:0] addr,        
     output wire [31:0] instruction  
 );
-
- 
     reg [31:0] mem [0:MEM_WORDS-1];
 
     wire [29:0] word_addr = addr[31:2];
